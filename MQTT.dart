@@ -1,7 +1,11 @@
 /**
  * Source code: https://www.emqx.io/blog/using-mqtt-in-flutter
- * After connecting to client:
- * client.subscribe("atopic", MqttQos.atMostOnce)
+ * How to connect to client? (method needs to be asynchronous)
+ * "MqttServerClient client = await connect();"
+ * Subscribe to topic?
+ * "client.subscribe("atopic", MqttQos.atMostOnce)
+ * Publish something (for testing purposes)?
+ * http://www.hivemq.com/demos/websocket-client/
  */
 
 import 'package:mqtt_client/mqtt_client.dart';
